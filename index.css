@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'IM+Fell+English',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}
+header{
+    background-color: darkolivegreen;
+    box-shadow: 0px 2px 20px #035f05; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 190px;
+    box-sizing: border-box;
+}
+.prota{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logotipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:  1px 2px 3px; 
+    font-family: 'IM+Fell+English',sans-serif;
+}
+.listav{
+    display: flex;
+    align-items: center;
+}
+.listav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.lista{
+    margin: 30px 20px;
+}
+.link{
+   text-decoration: none;
+   font-size: 1.2rem;
+   display: flex;
+   margin-left: 15px;
+   color: black;
+   font: 350;
+}
+.link:hover{
+   text-decoration: none;
+   font-size: 1.2rem;
+   display: flex;
+   margin-left: 15px;
+   color: black;
+   font: 300;
+   background-color: rgb(73, 101, 24);
+   border-radius: 18px;
+   padding: 5px;
+}
+ 
+
+/*produtos*/
+
+main{
+    margin-top: 150px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-family: serif;
+}
+p{
+    text-align: center;
+    justify-content: center;
+    margin: 6px;
+    padding-bottom: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+.produtos{
+    max-width: 736px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.produtos div{
+    display: flex;
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+/*sobre a empresa*/
+.imp{
+    width: 290px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    padding: 50px;
+}
+.p1{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-items: center;
+    font-family: 'IM+Fell+English';
+}
+/* cadastro*/
+.mensagem{
+    resize: none;
+}
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 90px; 
+}
+textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #070807;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 10px;
+    margin: 10px;
+    background: #058407e0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+form button:hover {
+    background: #035f05;
+}
+.h-1{
+    text-align: center;
+}
+.div-3{
+    background-color: darkolivegreen;
+}
+/*footer, graças a Deus a ultima parte*/
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #035f05;
+    font-weight: bolder;
+    color: aliceblue;
+    margin: 0%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.p2{
+ font-family: 'IM+Fell+English';
+ text-align: center;
+}
+
+
+/*responsividade*/
+
+/*tablets*/
+@media (min-width:768px) and (max-width:1023px){
+    header nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+}
+/*smartfhones*/
+@media (min-width:320px) and (max-width:480px){
+    header nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+    .img5 .p1{
+        text-align: center;
+    }
+
+}
